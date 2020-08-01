@@ -6,14 +6,14 @@ for _ in range(9):
     matrix.append(list(map(int, input().split())))
 ans = list(range(1, 10))
 
-def col_test(matrix):
+def row_test(matrix):
     for i in range(9):
         col = sorted(matrix[i])
         if col != ans:
             return False
     return True
 
-def row_test(matrix, answer):
+def col_test(matrix, answer):
     for i in range(9):
         row = []
         for j in range(9):
@@ -36,8 +36,8 @@ def square_test(matrix, answer, start, end):
     return False
 
 def test(matrix, answer):
-    if col_test(matrix):
-        if row_test(matrix, answer):
+    if row_test(matrix):
+        if col_test(matrix, answer):
             if square_test(matrix, answer, 0, 3):
                 if square_test(matrix, answer, 3, 6):
                     if square_test(matrix, answer, 6, 9):
