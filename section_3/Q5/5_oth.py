@@ -3,6 +3,7 @@ sys.stdin = open("C:/Users/dhxog/Desktop/파이썬 알고리즘 문제풀이(코
 
 n, m = map(int, input().split())
 a = list(map(int, input().split()))
+a
 cnt = 0
 for i in range(n):
     for j in range(i+1, n):

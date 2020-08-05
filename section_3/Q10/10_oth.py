@@ -17,6 +17,7 @@ def unique(s = list()):
         return True
     else:
         return False
+
 def sdoku(a):
     for i in range(0, len(a), 3):
         for j in range(0, len(a), 3):
