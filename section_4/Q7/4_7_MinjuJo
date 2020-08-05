@@ -1,0 +1,14 @@
+import sys
+sys.stdin = open("in5.txt", "r")
+
+width = int(input())
+box_lst = list(map(int, input().split()))
+move = int(input())
+
+for _ in range(move):
+    max_idx = box_lst.index(max(box_lst))
+    min_idx = box_lst.index(min(box_lst))
+    box_lst[max_idx] -= 1
+    box_lst[min_idx] += 1
+
+print(max(box_lst) - min(box_lst))
