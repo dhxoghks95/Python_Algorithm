@@ -13,6 +13,7 @@ def sum_rows(lst):
             res = tmp
     return res
 
+
 def sum_cols(lst):
     res = 0
     for i in range(len(lst)):
