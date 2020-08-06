@@ -1,3 +1,5 @@
+# ignore input file
+*.txt
 
 # Created by .ignore support plugin (hsz.mobi)
 ### Python template
