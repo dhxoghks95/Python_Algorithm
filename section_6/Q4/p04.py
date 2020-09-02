@@ -24,10 +24,9 @@ def subset_even(s):
                 if sum(lst) == num:
                     flag = True
                 return
-            include[idx] = True
             if not flag:
+                include[idx] = True
                 subset(idx + 1)
-            if not flag:
                 include[idx] = False
                 subset(idx + 1)
 
