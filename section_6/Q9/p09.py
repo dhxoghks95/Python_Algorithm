@@ -1,5 +1,4 @@
 import sys
-from functools import reduce
 
 sys.stdin = open("./input9.txt", 'r')
 

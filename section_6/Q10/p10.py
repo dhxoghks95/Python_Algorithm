@@ -14,11 +14,11 @@ def permute(idx, new_s):
         print(*new_s)
         return
     else:
-        for i in range(idx+1, len(s)):
+        for i in range(idx, len(s)):
             new_s.append(s[i])
-            permute(i, new_s)
+            permute(i+1, new_s)
             new_s.pop()
 
 
-permute(-1, [])
+permute(0, [])
 print(cnt)
